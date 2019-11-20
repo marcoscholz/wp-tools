@@ -1,0 +1,6 @@
+#!/bin/bash
+REALPATH=$(realpath $0)
+REALDIR=$(dirname $REALPATH)/bin
+MODULE=$1
+source $REALDIR/_inc.sh
+source $REALDIR/$MODULE.sh
